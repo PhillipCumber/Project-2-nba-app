@@ -1,0 +1,27 @@
+{
+  "name": "project-2-nba-app",
+  "version": "1.0.0",
+  "description": "General Assembly WDI 18 first app creation. Nba app to add yourself to your favorite team",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhillipCumber/Project-2-nba-app.git"
+  },
+  "author": "Phillip Cumberlander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhillipCumber/Project-2-nba-app/issues"
+  },
+  "homepage": "https://github.com/PhillipCumber/Project-2-nba-app#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.3.6",
+    "nodemon": "^1.18.4"
+  }
+}
