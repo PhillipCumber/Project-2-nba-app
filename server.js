@@ -1,10 +1,14 @@
-///Allows use of express module
+/////Allows use of express module
 let express = require('express')
 let app = express()
 
+///Middleware
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 ///Connecting the routes to the server
 let routes = require('./routes/index')
-// app.use('/', routes)
+app.use('/', routes)
 
 ///Connecting the hbs module
 app.set('view engine', 'hbs')
