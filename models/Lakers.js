@@ -7,7 +7,8 @@ let LakersPlayer = new Schema({
 
     name: String,
     number: Number,
-    team: String
+    team: String,
+    img: String
 })
 
 module.exports = mongoose.model('Lakers', LakersPlayer)
