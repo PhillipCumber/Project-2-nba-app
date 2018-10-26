@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="../../public/style.css">
 
     <title>Document</title>
 </head>
 <body>
+    {{!-- navbar  --}}
+   
+    <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Lebron</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+
+{{!-- end of navbar --}}
     
 
 
+{{!-- test section for my cards --}}
 
 {{#each lakersHBS}}
 
+<div class="d-flex flex-row justify-content-between">
 
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="..." alt="Card image cap">
@@ -25,6 +44,7 @@
   </div>
 </div>
 
+</div>
 
 
 {{/each}}
