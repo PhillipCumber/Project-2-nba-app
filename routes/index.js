@@ -7,3 +7,4 @@ let lakersController = require('../controllers/lakers')
 router.get('/', lakersController.index)
 
 module.exports = router
+/////create a view 
