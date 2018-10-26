@@ -2,9 +2,10 @@
 let express = require('express')
 let router = express.Router()
 let lakersController = require('../controllers/lakers')
+let logoController = require('../controllers/logo')
 
 ///home page
-router.get('/', lakersController.index)
+router.get('/', logoController.index)
 
 module.exports = router
 /////create a view 

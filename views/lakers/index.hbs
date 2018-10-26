@@ -1,45 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Document</title>
-</head>
-<body>
-    {{!-- navbar  --}}
-   
-    <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Lebron</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
-
-{{!-- end of navbar --}}
-    
-
 
 {{!-- test section for my cards --}}
 
-{{#each lakersHBS}}
+{{#each logoHBS}}
 
 <div class="d-flex flex-row justify-content-between">
 
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="{{img}}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{name}}</h5>
-    <p class="card-text">{{number}}</p>
+    <p class="card-text">{{coach}}, {{bestPlayer}}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
@@ -48,5 +18,3 @@
 
 
 {{/each}}
-</body>
-</html>
