@@ -6,11 +6,14 @@ let lakersController = {
 
     index: (req, res) => {
 
-        Lakers.find()
-            .then((player) => {
+         res.render('app/index')
+        // res.send('hey')
 
-                res.render('lakers/index', {lakersHBS: player})
-            })
+        // Lakers.find()
+        //     .then((player) => {
+
+        //         res.render('lakers/index', {lakersHBS: player})
+        //     })
     }
 }
 
