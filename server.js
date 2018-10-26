@@ -4,8 +4,8 @@ let express = require('express')
 let app = express()
 
 ///Connecting mongoose to heroku
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI); 
+let mongoose = require('mongoose');
+mongoose.connect('process.env.MONGODB_URI'); 
 
 
 ///Middleware
@@ -25,3 +25,5 @@ app.listen(PORT, () => {
 
     console.log(`Server is listening on PORT: ${PORT}`)
 })
+
+module.exports = app
