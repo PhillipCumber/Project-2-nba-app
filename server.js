@@ -5,7 +5,7 @@ let app = express()
 
 ///Connecting mongoose to heroku
 let mongoose = require('mongoose');
-mongoose.connect('process.env.MONGODB_URI'); 
+mongoose.connect('mongodb://process.env.MONGODB_URI'); 
 
 
 ///Middleware
