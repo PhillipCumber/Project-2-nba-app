@@ -26,4 +26,4 @@ app.listen(PORT, () => {
     console.log(`Server is listening on PORT: ${PORT}`)
 })
 
-module.exports = mongoose
+module.exports = app
