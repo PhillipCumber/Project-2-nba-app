@@ -1,6 +1,12 @@
+require('dotenv').config()
 /////Allows use of express module
 let express = require('express')
 let app = express()
+
+///Connecting mongoose to heroku
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_URI); 
+
 
 ///Middleware
 app.use(express.urlencoded({ extended: true }));

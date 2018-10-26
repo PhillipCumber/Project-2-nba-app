@@ -10,7 +10,4 @@ mongoose.connect('open', () => {
 })
 
 
-///Connecting to heroku
-// mongoose.connect('mongodb://heroku_g4jxcnvw:mqq5s9hub4u0qoiggmu68iihhv@ds161069.mlab.com:61069/heroku_g4jxcnvw')
-
 module.exports = mongoose
