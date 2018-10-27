@@ -11,6 +11,7 @@ mongoose.connect('process.env.MONGODB_URI');
 ///Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// app.use(express.static(path.join(__dirname, '/public')));
 
 ///Connecting the routes to the server
 let routes = require('./routes/index')
