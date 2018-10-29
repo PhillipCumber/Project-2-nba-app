@@ -1,4 +1,7 @@
-
+{{!-- styling inside page, I know not good practice but couldnt get other ways to work --}}
+<style type="text/css">
+   body { background:url('https://cdn.nba.net/nba-drupal-prod/styles/landscape_1045w/s3/2018-08/leaguev3.jpeg?itok=b1Ef6wg9') !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
 {{!-- test section for my cards --}}
 
 
@@ -16,10 +19,7 @@
     <li class="list-group-item bg-info text-center border border-dark rounded">{{rings}}</li>
     
   </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
+
 </div>
 
 {{/each}}

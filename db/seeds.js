@@ -46,7 +46,7 @@ Lakers.create(LakersPlayers)
             name: 'Los Angeles Lakers',
             bestPlayer: 'Lebron James',
             rings: 17,
-            img: 'https://pbs.twimg.com/profile_images/1048230095331061761/Yq0a2q3b.jpg',
+            img: 'https://i.ebayimg.com/images/g/ylAAAOxyyF5RP7b9/s-l300.jpg',
             coach: 'Luke Walton'
         },
 
@@ -55,7 +55,7 @@ Lakers.create(LakersPlayers)
             name: 'Atlanta Hawks',
             bestPlayer: 'Trae Young',
             rings: 1,
-            img: 'https://cdn.bleacherreport.net/images/team_logos/328x328/atlanta_hawks.png',
+            img: 'https://s3.amazonaws.com/s3.wzgcfm.radio.com/altanta_hawks.png',
             coach: 'Lloyd Pierce'
         },
 
