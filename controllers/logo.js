@@ -9,7 +9,7 @@ let logoController = {
         teamLogo.find()
             .then((logo) => {
 
-                res.render('lakers/index', {logoHBS: logo})
+                res.render('logo/index', {logoHBS: logo})
             })
     }
 }

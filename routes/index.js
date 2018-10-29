@@ -7,5 +7,8 @@ let logoController = require('../controllers/logo')
 ///home page
 router.get('/', logoController.index)
 
+//lakers team page
+router.get('/lakers', lakersController.index)
+
 module.exports = router
 /////create a view 
