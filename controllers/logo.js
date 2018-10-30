@@ -11,7 +11,21 @@ let logoController = {
 
                 res.render('logo/index', {logoHBS: logo})
             })
-    }
+    },
+
+    // show: (req, res) => {
+
+    //     let homeId = req.params.id
+
+    //     teamLogo.findById(homeId)
+    //         .then((team) => {
+
+    //             res.render('logo/index', {
+
+    //                 logoHBS: team
+    //             })
+    //         })
+    // }
 }
 
 module.exports = logoController

@@ -11,6 +11,23 @@ let lakersController = {
 
                 res.render('lakers/index', {lakersHBS: player})
             })
+    },
+
+    show: (req, res) => {
+
+        res.send('hey fooooooo')
+        let lakersId = req.params.id
+
+        Lakers.findById(lakersId)
+            .then((players) => {
+
+                res.render('lakers/index', {lakersHBS: players})
+            })
+    },
+
+    create: (req, res) => {
+
+        res.send('hellllo fooolooiioilksldn')
     }
 }
 

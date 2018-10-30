@@ -3,9 +3,13 @@ let mongoose = require('./connection')
 
 ///Imported team model
 let Lakers = require('../models/Lakers')
+let Spurs = require('../models/Spurs')
+let Knicks = require('../models/Knicks')
+let Hawks = require('../models/Hawks')
 let teamLogo = require('../models/TeamLogo')
 
 ///Custom Information
+///Seeds for Lakers model
 let LakersPlayers = [
 
     {
@@ -35,6 +39,57 @@ Lakers.create(LakersPlayers)
     .then(lakers => {
 
         console.log('New Player', lakers)
+    })
+
+    /////Seeds for Spurs model
+    let SpursPlayers = [
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+    ]
+
+    Spurs.create(SpursPlayers)
+    .then(spurs => {
+
+        console.log('New Player', spurs)
+    })
+
+    ////Seeds for the Knicks model
+    let KnicksPlayers = [
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+    ]
+
+    Knicks.create(KnicksPlayers)
+    .then(knicks => {
+
+        console.log('New Player', knicks)
+    })
+
+    ////Seeds for the Hawks model
+    let HawksPlayers = [
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+    ]
+
+    Hawks.create(HawksPlayers)
+    .then(hawks => {
+
+        console.log('New Player', hawks)
     })
 
     ////Seeds for logo model
